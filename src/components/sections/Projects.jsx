@@ -1,4 +1,3 @@
-// src/components/sections/Projects.jsx
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
