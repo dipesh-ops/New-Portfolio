@@ -35,8 +35,7 @@ const Projects = () => {
               whileHover={{ y: -10 }}
             >
               <div className="h-48 bg-gray-300 flex items-center justify-center">
-                {/* Project image placeholder */}
-                <img src={project.image} alt="" />
+                <img src={project.image} alt="no image" />
               </div>
               
               <div className="p-6">
