@@ -6,7 +6,7 @@ export const projects = [
     technologies: ["React", "Redux", "Tailwind CSS", "TMDB API"],
     githubLink: "https://github.com/dipesh-ops/Cinevortex",
     liveLink: "https://cinevortex.vercel.app/",
-    image: "/src/assets/images/projectImages/cinevortex.jpg"
+    image: "/src/assets/images/cinevortex.jpg"
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const projects = [
     technologies: ["React", "Tailwind CSS", "Context API", "Firebase"],
     githubLink: "https://github.com/dipesh-ops/ecommers",
     liveLink: "https://ecommers-app-iota.vercel.app/",
-    image: "/src/assets/images/projectImages/ecommers.jpg"
+    image: "/src/assets/images/ecommers.jpg"
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const projects = [
     technologies: ["React", "Taiwind", "Motion"],
     githubLink: "https://github.com/dipesh-ops/Startup_project",
     liveLink: "https://startup-project-dipesh-ops-projects.vercel.app/",
-    image: "/src/assets/images/projectImages/uxdesign.jpg"
+    image: "/src/assets/images/uxdesign.jpg"
   }
 ];
 
