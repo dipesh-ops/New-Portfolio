@@ -13,7 +13,7 @@ export default function Contact() {
           <ContactForm />
           
           <div className="mt-12 text-center text-gray-600 dark:text-gray-400">
-            <p>Or email me directly at: <span className="text-primary">dipeshmeshram79@gmail.com</span></p>
+            <p>Or email me directly at: <span className="text-primary">dipeshmeshram79@gmail      .com</span></p>
           </div>
         </div>
       </div>
