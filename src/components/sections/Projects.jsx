@@ -34,7 +34,7 @@ const Projects = () => {
               whileHover={{ y: -10 }}
             >
               <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <img src={project.image} alt="no image" />
+                {<img src={project.image} alt="no image" /> ? <img src={project.image} alt="no image" /> : "Image is loading"}
               </div>
               
               <div className="p-6">
