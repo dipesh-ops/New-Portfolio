@@ -1,6 +1,7 @@
 // src/components/sections/Hero.jsx
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
+import resume from '../../resume/Dipesh Resumedocx.pdf'
 
 const Hero = () => {
   const theme = useSelector((state) => state.theme.mode);
@@ -39,7 +40,7 @@ const Hero = () => {
             </motion.a>
             
             <motion.a
-              href="/src/resume/Dipesh Resumedocx.pdf"
+              href={resume}
               download
               className={`px-6 py-3 border-2 ${theme === 'dark' ? 'border-white text-white' : 'border-gray-800 text-gray-800'} rounded-lg font-medium`}
               whileHover={{ scale: 1.05 }}
