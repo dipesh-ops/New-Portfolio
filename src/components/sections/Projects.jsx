@@ -1,7 +1,39 @@
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import { projects } from '../utils/constants';
+import image1 from '../../assets/images/projectImages/cinevortex.jpg'
+import image2 from '../../assets/images/projectImages/ecommers.jpg'
+import image3 from '../../assets/images/projectImages/uxdesign.jpg'
+
+const projects = [
+  {
+    id: 1,
+    title: "Movie App",
+    description: "This is a fully responsive Movie Application which contains a list of movies, tv shows from the cloud sorted based on the most popular filter. User can change filter (trending, popular, rated, and preferred language) & users can see the movie details, trailers, reviews, by clicking on the movie, tv shows they like on the home screen.",
+    technologies: ["React", "Redux", "Tailwind CSS", "TMDB API"],
+    githubLink: "https://github.com/dipesh-ops/Cinevortex",
+    liveLink: "https://cinevortex.vercel.app/",
+    image: image1
+  },
+  {
+    id: 2,
+    title: "E-Commers App",
+    description: "Developed full-stack e-commerce platform using React.js, Redux Toolkit, and Firebase, featuring a responsive UI, secure authentication, and real-time cart management. ",
+    technologies: ["React", "Tailwind CSS", "Context API", "Firebase"],
+    githubLink: "https://github.com/dipesh-ops/ecommers",
+    liveLink: "https://ecommers-app-iota.vercel.app/",
+    image: image2
+  },
+  {
+    id: 3,
+    title: "UI Design To React App",
+    description: "Developed a UI Design to react app which is compatible for all screens",
+    technologies: ["React", "Taiwind", "Motion"],
+    githubLink: "https://github.com/dipesh-ops/Startup_project",
+    liveLink: "https://startup-project-dipesh-ops-projects.vercel.app/",
+    image: image3 
+  }
+];
 
 const Projects = () => {
   const theme = useSelector((state) => state.theme.mode);
