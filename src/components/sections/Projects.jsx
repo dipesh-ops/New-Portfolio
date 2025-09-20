@@ -11,8 +11,8 @@ const projects = [
     title: "Movie App",
     description: "This is a fully responsive Movie Application which contains a list of movies, tv shows from the cloud sorted based on the most popular filter. User can change filter (trending, popular, rated, and preferred language) & users can see the movie details, trailers, reviews, by clicking on the movie, tv shows they like on the home screen.",
     technologies: ["React", "Redux", "Tailwind CSS", "TMDB API"],
-    githubLink: "https://github.com/dipesh-ops/Cinevortex",
-    liveLink: "https://cinevortex.vercel.app/",
+    githubLink: "https://github.com/dipesh-ops/Cinevortex1",
+    liveLink: "https://cinevortex1-eight.vercel.app/",
     image: image1
   },
   {
