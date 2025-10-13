@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import image1 from '../../assets/images/projectImages/cinevortex.jpg'
-import image2 from '../../assets/images/projectImages/ecommers.jpg'
-import image3 from '../../assets/images/projectImages/uxdesign.jpg'
+import image1 from '../../assets/images/projectImages/cineVortex.png'
+import image2 from '../../assets/images/projectImages/ecommersFullView.png'
+import image3 from '../../assets/images/projectImages/uxDesign.png'
 
 const projects = [
   {
@@ -20,8 +20,8 @@ const projects = [
     title: "E-Commers App",
     description: "Developed full-stack e-commerce platform using React.js, Redux Toolkit, and Firebase, featuring a responsive UI, secure authentication, and real-time cart management. ",
     technologies: ["React", "Tailwind CSS", "Context API", "Firebase"],
-    githubLink: "https://github.com/dipesh-ops/ecommers",
-    liveLink: "https://ecommers-app-iota.vercel.app/",
+    githubLink: "https://github.com/dipesh-ops/Ecomp",
+    liveLink: "https://ecomp-amber.vercel.app/",
     image: image2
   },
   {
@@ -65,9 +65,30 @@ const Projects = () => {
               className={`rounded-lg overflow-hidden shadow-lg ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-50'}`}
               whileHover={{ y: -10 }}
             >
-              <div className="h-48 bg-gray-300 flex items-center justify-center">
-                <img src={project.image} alt="no image" />
-              </div>
+              {/* Image container with hover-only scroll animation */}
+              <motion.div 
+                className="h-48 bg-gray-300 overflow-hidden relative"
+              >
+                <motion.div
+                  className="w-full h-full"
+                  initial={{ y: 0 }} // Start from top
+                  whileHover={{
+                    y: "-100%", // Scroll to show full image
+                  }}
+                  transition={{
+                    duration: 15,
+                    ease: "linear",
+                    repeat: Infinity,
+                    repeatType: "loop"
+                  }}
+                >
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-auto min-h-full object-cover"
+                  />
+                </motion.div>
+              </motion.div>
               
               <div className="p-6">
                 <h3 className={`text-xl font-bold mb-2 ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>

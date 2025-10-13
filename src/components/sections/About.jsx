@@ -2,7 +2,7 @@
 import { motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import { aboutInfo } from '../utils/constants';
-import myImage from '../../assets/images/dipesh.jpg'
+import myImage from '../../assets/images/projectImages/dipesh.jpg'
 
 const About = () => {
   const theme = useSelector((state) => state.theme.mode);
